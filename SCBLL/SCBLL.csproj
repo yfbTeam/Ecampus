@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89E32D9F-9893-45CC-826E-978C6C994516}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCBLL</RootNamespace>
+    <AssemblyName>SCBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="BLLCommon.cs" />
+    <Compile Include="BLLTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BLLTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="Partial\Acti_ActivityService.cs" />
+    <Compile Include="Partial\Acti_DepartInfoService.cs" />
+    <Compile Include="Partial\Asso_ActivityService.cs" />
+    <Compile Include="Partial\Asso_ApplyService.cs" />
+    <Compile Include="Partial\Asso_InfoService.cs" />
+    <Compile Include="Partial\Com_AlbumService.cs" />
+    <Compile Include="Partial\Com_EvaTempService.cs" />
+    <Compile Include="Partial\Com_FavoritesService.cs" />
+    <Compile Include="Partial\Com_MessageService.cs" />
+    <Compile Include="Partial\Com_NewInfoService.cs" />
+    <Compile Include="Partial\Course_ChapterService.cs" />
+    <Compile Include="Partial\Course_ManageService.cs" />
+    <Compile Include="Partial\Couse_ResourceService.cs" />
+    <Compile Include="Partial\Dorm_ActivityService.cs" />
+    <Compile Include="Partial\Dorm_BuildingService.cs" />
+    <Compile Include="Partial\Dorm_RoomService.cs" />
+    <Compile Include="Partial\ModelManageService.cs" />
+    <Compile Include="Partial\Plat_MenuInfoService.cs" />
+    <Compile Include="Partial\Plat_RoleOfUserService.cs" />
+    <Compile Include="Partial\Plat_RoleService.cs" />
+    <Compile Include="Partial\User_Model_RelService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="BLLTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BLLTemplate.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCDAL\SCDAL.csproj">
+      <Project>{3c974cac-5730-4318-b332-004ebc043940}</Project>
+      <Name>SCDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCIBLL\SCIBLL.csproj">
+      <Project>{a3a8d1be-5a85-4f31-86db-2337bb2d9370}</Project>
+      <Name>SCIBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCIDAL\SCIDAL.csproj">
+      <Project>{1f8992ff-4a10-4aa2-bcea-51b4ffd3b94e}</Project>
+      <Name>SCIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCModel\SCModel.csproj">
+      <Project>{15f6cb79-8809-4589-a17a-9ca41858428f}</Project>
+      <Name>SCModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCUtility\SCUtility.csproj">
+      <Project>{f96c78b8-5b45-4501-89b7-dd4b2c08d6f0}</Project>
+      <Name>SCUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

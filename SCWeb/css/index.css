@@ -1,0 +1,74 @@
+.teacher_wrap{width:548px;}
+/*教师信息*/
+.teacher dt{width:120px;height:120px;}
+.teacher dt .teacher_img{width:96px;height:96px;border-radius:50% ;overflow: hidden;border: 4px solid #a0d468;margin:9px;}
+.teacher dt .teacher_img img{width:100%;}
+.teacher dd .teacher_mes{margin-top: 20px;font-size: 12px;color:#434a52;}
+.teacher dd .teacher_mes .teacher_name{font-size:18px;width:65px;display: inline-block;}
+.teacher dd .teacher_school1{margin-top: 15px;font-size: 12px;color:#434a52;}
+.teacher dd .teacher_school2{margin-top: 8px;font-size: 12px;color:#434a52;}
+.course_mes{width:140px;padding-right: 20px;}
+.course_mes li{padding-left:10px;line-height: 40px;border-bottom: 1px solid #e9e7e7;color:#434A52;}
+.course_mes li.test{border: none;}
+/*通知*/
+.notice{width:550px;}
+.notice ul{margin-left: -10px;}
+.notice ul li{width:174.5px;float:left;margin-left:10px;position:relative;}
+.notice ul li.pendingreview{padding:0;}
+.notice ul li .notice_mes{height:120px;display: block;}
+.notice_mes1{border-width:4px;border-style:solid;width:80px;height:80px;border-radius:50% ;margin: 10px auto 0px auto;display: block;}
+.notice_mes1 i{width:24px;height:18px;display: block;margin: 15px auto 0px auto;font-size: 24px;}
+.notice_mes1 .notice_mes_num{text-align: center;font-size: 18px;color:#434A52;line-height: 35px;}
+.notice_name{text-align: center;font-size: 12px;line-height: 28px;color:#656d77;}
+
+/*连接*/
+.connect{position:absolute;bottom:-15px;height:20px;width:100%;}
+.connect .connect_left,.connect .connect_right{width:8px;height:20px;border-radius:2px;display: block;position:absolute;top:0;}
+.connect .connect_left{left:20%;}
+.connect .connect_right{right:20%;}
+/*日历*/
+.scheduprog{width:1200px;}
+.calendar_titie{height:32px;width:100%;border-radius:2px;background: #fd6d4c;line-height: 32px;color:#fff;text-indent: 15px;font-size: 14px;}
+.calendar_wrap{width:1198px;border-top:none;}
+/*我的应用*/
+.myapp_wrap{min-height:280px;}
+.apps_title{padding:10px 10px 0px 0px;position:relative;}
+.apps_title h1{width:100px;height:25px;line-height: 25px;text-align: center;font-weight:normal;font-size:14px;}
+.apps_title .more{line-height: 25px;}
+.myapp_wrap .apps_title h1{border-left:3px #0B75C1 solid;margin-left: -3px;}
+.otherapp_wrap{min-height:280px;width:508px;}
+.otherapp_wrap .apps_title h1{border-left:3px #ac95eb solid;margin-left: -3px;}
+.otherapp_wrap .apps_title .more{padding-right: 65px;}
+/**/
+.myapp_wrap .app_list {width:100%;}
+.otherapp_wrap .app_list {padding:10px 55px;}
+.app_list li{width:110px;height:110px;margin:10px;float:left;}
+.app_list li a{display: block;width:110px;height:110px;position:relative}
+.app_list li a i{width:50px;height:50px;display: block;position:absolute;top:20px;left:50%;margin-left: -25px;}
+.app_list li a i img{width:100%}
+.app_name{width:100%;height:30px;line-height: 30px;color:#fff;font-size: 14px;text-align: center;bottom:0;position:absolute;}
+/*添加*/
+.add_wrap{padding:0px 20px 20px 20px;}
+.add{width:110px;height:110px;background: #e6e9ed;position:relative;cursor:pointer;}
+.add i{width:38px;height:38px;background: url(../images/add.png) no-repeat 0px 0px;margin:36px;position:absolute;display: block;}
+/*日程安排控件*/
+#calendar{width:100%;font-size: 12px;}
+.fc-border-separate thead tr{width:100%;height:25px;}
+.fc-border-separate thead  tr th.fc-day-header,.fc-border-separate thead  tr th.fc-widget-header{vertical-align: middle;border-bottom: 3px solid #FFD04C;}
+.index_footer{height:width:100%;height:15px;}
+/*添加系统应用*/
+.addSystemAppa{padding-bottom: 55px;}
+.addSystemApp{height:100%;padding-left:20px;background: #fff;}
+.addSystemApp h1{line-height: 40px;color:#333;}
+.addSystemApp .showApp,.addSystemApp .hideApp{margin-bottom:20px;border-left: 1px solid #e8e8e8;}
+.addSystemApp  li{position:relative;width:110px;float:left;border-top: 1px solid #e8e8e8;height:110px;border-right:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;}
+.addSystemApp  li .app{margin:15px;width:80px;height:80px;border-radius:2px;position:relative;}
+.addSystemApp  li .app .app_img{width:40px;height:40px;background: #fff;left:20px;position:absolute;top:15px;}
+.addSystemApp  li .app .app_name{height:25px;line-height: 25px;}
+.addSystemApp  li .addremove{cursor:pointer;width:14px;height:14px;position:absolute;right:0;bottom:0;}
+.addSystemApp  li .addremove img{width:100%;}
+.preserved{background:#fff;height:54px;border-top:1px solid #e8e8e8;position:fixed;bottom:0;width:100%;z-index: 9999;}
+.preserved input{margin:11px 10px;width:72px;height:32px;cursor:pointer;color:#fff;border:none;font-size:14px;;}
+.preserved input.keep{background: #1381d6;}
+.preserved input.cancel{color:#666;}
+

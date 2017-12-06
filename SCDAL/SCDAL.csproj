@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C974CAC-5730-4318-B332-004EBC043940}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCDAL</RootNamespace>
+    <AssemblyName>SCDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDal.cs" />
+    <Compile Include="DALTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DALTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Partial\Acti_ActivityDal.cs" />
+    <Compile Include="Partial\Acti_DepartInfoDal.cs" />
+    <Compile Include="Partial\Acti_DepartMemberDal.cs" />
+    <Compile Include="Partial\Acti_ProjectDal.cs" />
+    <Compile Include="Partial\Acti_RecruitApplyDal.cs" />
+    <Compile Include="Partial\Asso_ActivityDal.cs" />
+    <Compile Include="Partial\Asso_ApplyDal.cs" />
+    <Compile Include="Partial\Asso_HisLeaderDal.cs" />
+    <Compile Include="Partial\Asso_HisMemberDal.cs" />
+    <Compile Include="Partial\Asso_InfoDal.cs" />
+    <Compile Include="Partial\Asso_MemberDal.cs" />
+    <Compile Include="Partial\Asso_TypeDal.cs" />
+    <Compile Include="Partial\Book_CatologDal.cs" />
+    <Compile Include="Partial\Book_GradeDal.cs" />
+    <Compile Include="Partial\Book_Subject.cs" />
+    <Compile Include="Partial\Book_VersionDal.cs" />
+    <Compile Include="Partial\ClickDetailDal.cs" />
+    <Compile Include="Partial\Com_AlbumDal.cs" />
+    <Compile Include="Partial\Com_AlbumPicDal.cs" />
+    <Compile Include="Partial\Com_EvaBaseDal.cs" />
+    <Compile Include="Partial\Com_EvaTempDal.cs" />
+    <Compile Include="Partial\Com_FavoritesDal.cs" />
+    <Compile Include="Partial\Com_MessageDal.cs" />
+    <Compile Include="Partial\Com_NewCommentDal.cs" />
+    <Compile Include="Partial\Com_NewInfoDal.cs" />
+    <Compile Include="Partial\Course_ChapterDal.cs" />
+    <Compile Include="Partial\Course_ManageDal.cs" />
+    <Compile Include="Partial\Dorm_ActivityDal.cs" />
+    <Compile Include="Partial\Dorm_BuildingDal.cs" />
+    <Compile Include="Partial\Dorm_RoomDal.cs" />
+    <Compile Include="Partial\Dorm_RoomStuListDal.cs" />
+    <Compile Include="Partial\ModelManageDal.cs" />
+    <Compile Include="Partial\MyResourceDal.cs" />
+    <Compile Include="Partial\Plat_MenuInfoDal.cs" />
+    <Compile Include="Partial\Plat_RoleDal.cs" />
+    <Compile Include="Partial\Plat_RoleOfUserDal.cs" />
+    <Compile Include="Partial\ResourcesInfoDal.cs" />
+    <Compile Include="Partial\UserSkinDal.cs" />
+    <Compile Include="Partial\User_Model_RelDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DALTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DALTemplate.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCIDAL\SCIDAL.csproj">
+      <Project>{1f8992ff-4a10-4aa2-bcea-51b4ffd3b94e}</Project>
+      <Name>SCIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCModel\SCModel.csproj">
+      <Project>{15f6cb79-8809-4589-a17a-9ca41858428f}</Project>
+      <Name>SCModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCUtility\SCUtility.csproj">
+      <Project>{f96c78b8-5b45-4501-89b7-dd4b2c08d6f0}</Project>
+      <Name>SCUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

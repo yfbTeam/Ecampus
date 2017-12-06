@@ -1,0 +1,60 @@
+/* max */
+.ico-apk-max{background-image: url('/icons/sprite.png');background-position: -85px 0px;}
+.ico-dmg-max{background-image: url('/icons/sprite.png');background-position: -255px 0px;}
+.ico-doc-max{background-image: url('/icons/sprite.png');background-position: 0px -85px;}
+.ico-docx-max{background-image: url('/icons/sprite.png');background-position: 0px -85px;}
+.ico-exe-max{background-image: url(/icons/sprite.png);background-position: -85px -85px;}
+.ico-file-max{background-image: url(/icons/sprite.png);background-position: -170px 0px;}
+.ico-imga-max{background-image: url(/icons/sprite.png);background-position: -170px -85px;}
+.ico-png-max{background-image: url(/icons/sprite.png);background-position: 0px -170px;}
+.ico-jpg-max{background-image: url(/icons/sprite.png);background-position: 0px -170px;}
+.ico-jpeg-max{background-image: url(/icons/sprite.png);background-position: 0px -170px;}
+.ico-mp4-max{background-image: url(/icons/sprite.png);background-position: -85px -170px;}
+.ico-mp3-max{background-image: url(/icons/sprite.png);background-position: -85px -170px;}
+.ico-flv-max{background-image: url(/icons/sprite.png);background-position: -85px -170px;}
+.ico-wmv-max{background-image: url(/icons/sprite.png);background-position: -85px -170px;}
+.ico-pdf-max{background-image: url(/icons/sprite.png);background-position: -170px -170px;}
+.ico-ppt-max{background-image: url(/icons/sprite.png);background-position: 0px 0px;}
+.ico-pptx-max{background-image: url(/icons/sprite.png);background-position: 0px 0px;}
+
+.ico-psd-max{background-image: url(/icons/sprite.png);background-position: -255px -85px;}
+.ico-rar-max{background-image: url(/icons/sprite.png);background-position: -255px -170px;}
+.ico-txt-max{background-image: url(/icons/sprite.png);background-position: 0px -255px;}
+.ico-video-max{background-image: url(/icons/sprite.png);background-position: -85px -255px;}
+.ico-vsd-max{background-image: url(/icons/sprite.png);background-position: -170px -255px;}
+.ico-xls-max{background-image: url(/icons/sprite.png);background-position: -255px -255px;}
+.ico-xlsx-max{background-image: url(/icons/sprite.png);background-position: -255px -255px;}
+.ico-yun-max{background-image: url(/icons/sprite.png);background-position: -340px 0px;}
+.ico-accdb-max{background-image: url(/icons/sprite.png);background-position: -340px 0px;}
+.ico-pub-max{background-image: url(/icons/sprite.png);background-position: -340px 0px;}
+.ico-zip-max{background-image: url(/icons/sprite.png);background-position: -340px -85px;}
+.ico-rar-max{background-image: url(/icons/sprite.png);background-position: -340px -85px;}
+
+/* min */
+.ico-ai-min{background-image: url(/icons/spritea.png);background-position: -25px 0px;}
+.ico-apk-min{background-image: url(/icons/spritea.png);background-position: -25px -50px;}
+.ico-dmb-min{background-image: url(/icons/spritea.png);background-position: 0px -25px;}
+.ico-doc-min{background-image: url(/icons/spritea.png);background-position: -25px -25px;}
+.ico-docx-min{background-image: url(/icons/spritea.png);background-position: -25px -25px;}
+.ico-file-min{background-image: url(/icons/spritea.png);background-position: -50px 0px;}
+.ico-png-min{background-image: url(/icons/spritea.png);background-position: -50px -25px;}
+.ico-jpg-min{background-image: url(/icons/spritea.png);background-position: -50px -25px;}
+.ico-jpeg-min{background-image: url(/icons/spritea.png);background-position: -50px -25px;}
+.ico-mp4-min{background-image: url(/icons/spritea.png);background-position: 0px -50px;}
+.ico-mp3-min{background-image: url(/icons/spritea.png);background-position: 0px -50px;}
+
+.ico-flv-min{background-image: url(/icons/spritea.png);background-position: 0px -50px;}
+.ico-wmv-min{background-image: url(/icons/spritea.png);background-position: 0px -50px;}
+.ico-pdf-min{background-image: url(/icons/spritea.png);background-position: 0px 0px;}
+.ico-ppt-min{background-image: url(/icons/spritea.png);background-position: -50px -50px;}
+.ico-pptx-min{background-image: url(/icons/spritea.png);background-position: -50px -50px;}
+
+.ico-psd-min{background-image: url(/icons/spritea.png);background-position: -75px 0px;}
+.ico-txt-min{background-image: url(/icons/spritea.png);background-position: -75px -25px;}
+.ico-xls-min{background-image: url(/icons/spritea.png);background-position: -75px -50px;}
+.ico-xlsx-min{background-image: url(/icons/spritea.png);background-position: -75px -50px;}
+.ico-yun-min{background-image: url(/icons/spritea.png);background-position: 0px -75px;}
+.ico-accdb-min{background-image: url(/icons/spritea.png);background-position: 0px -75px;}
+.ico-pub-min{background-image: url(/icons/spritea.png);background-position: 0px -75px;}
+.ico-zip-min{background-image: url(/icons/spritea.png);background-position: -25px -75px;}
+.ico-rar-min{background-image: url(/icons/spritea.png);background-position: -25px -75px;}
